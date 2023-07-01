@@ -9,8 +9,8 @@ class Car:
     def get_year_model(self):
         return self.__year_model
     
-    # Getter Method for Maker
-    def get_maker(self):
+    # Getter Method for Make
+    def get_make(self):
         return self.__make
 
     # Method for Acceleration
