@@ -23,4 +23,14 @@ def InputPet():
             break
         except ValueError as Error:
             print(Error)
+    
+    while True:
+        try:
+            age = input("Enter the pet's age: ")
+            age = int(age)
+            if age <= 0:
+                raise ValueError("Invalid age. Please enter a valid positive integer age.")
+            break
+        except ValueError as Error:
+            print(Error)
 InputPet()
