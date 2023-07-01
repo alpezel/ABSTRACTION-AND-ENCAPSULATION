@@ -9,28 +9,28 @@ def InputPet():
     print(boarder)
     while True:
         try:
-            name = input("\033[0;47mEnter the pet's name: ")
+            name = input("\033[0;36mEnter the pet's name:\033[0;39m ")
             if not name:
-                raise ValueError("Name should not be Empty")
+                raise ValueError("\033[0;41mName should not be Empty\033[0;39m")
             break
         except ValueError as Error:
             print(Error)
 
     while True:
         try:
-            animal_type = input("Enter the type of animal: ")
+            animal_type = input("\033[0;36mEnter the type of animal:\033[0;39m ")
             if not animal_type:
-                raise ValueError("Animal Type should not be Empty")
+                raise ValueError("\033[0;41mAnimal Type should not be Empty\033[0;39m")
             break
         except ValueError as Error:
             print(Error)
     
     while True:
         try:
-            age = input("Enter the pet's age: ")
+            age = input("\033[0;36mEnter the pet's age:\033[0;39m ")
             age = int(age)
             if age <= 0:
-                raise ValueError("Invalid age. Please enter a valid positive integer age.")
+                raise ValueError("\033[0;41mInvalid age. Please enter a valid positive integer age.\033[0;39m")
             break
         except ValueError as Error:
             print(Error)
@@ -42,8 +42,8 @@ def InputPet():
 
     # Display pet's details
     print(boarder)
-    print("Pet's Name:", pet.get_name())
-    print("Animal Type:", pet.get_animal_type())
-    print("Pet's Age:", pet.get_age())
+    print("\033[0;36mPet's Name:\033[0;39m","\033[0;35m",pet.get_name(),"\033[0;39m")
+    print("\033[0;36mAnimal Type:\033[0;39m","\033[0;35m",pet.get_animal_type(),"\033[0;39m")
+    print("\033[0;36mPet's Age:\033[0;39m","\033[0;35m",pet.get_age(),"\033[0;39m")
     print(boarder)
 InputPet()
