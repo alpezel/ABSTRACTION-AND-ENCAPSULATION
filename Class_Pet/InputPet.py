@@ -14,4 +14,13 @@ def InputPet():
             break
         except ValueError as Error:
             print(Error)
+
+    while True:
+        try:
+            animal_type = input("Enter the type of animal: ")
+            if not animal_type:
+                raise ValueError("Animal Type should not be Empty")
+            break
+        except ValueError as Error:
+            print(Error)
 InputPet()
