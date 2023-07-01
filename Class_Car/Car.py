@@ -5,6 +5,14 @@ class Car:
         self.__make= make
         self.__speed= 0
     
+    # Getter Method for Year Model
+    def get_year_model(self):
+        return self.__year_model
+    
+    # Getter Method for Maker
+    def get_maker(self):
+        return self.__make
+
     # Method for Acceleration
     def accelerate(self):
         self.__speed += 5
@@ -14,6 +22,7 @@ class Car:
         self.__speed -= 5
         if self.__speed < 0:
             self.__speed = 0
+
     # Getter Method for speed
     def get_speed(self):
         return self.__speed
