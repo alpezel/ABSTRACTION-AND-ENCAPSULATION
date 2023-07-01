@@ -16,7 +16,7 @@
 # Example Output 
 
 ### Output in Class Fan
-![](img\IMG_5737.jpg)
+![](img/IMG_5737.jpg)
 
 
 ## Class Car
@@ -40,7 +40,7 @@ The get_speed method should return the current speed.
 # Example Output 
 
 ### Output in Class Car
-![](img\IMG_5738.jpg)
+![](img/IMG_5738.jpg)
 
 
 ## Class Pet
@@ -67,8 +67,8 @@ This method returns the value of the __age field.
 
 # Example Output with Error Handling
 
-### Output in Class Fan
-![](img\IMG_5739.jpg)
+### Output in Class Pet
+![](img/IMG_5739.jpg)
 
 # How To Use / Run
 1. Install Python on your computer to run the code. You can download its latest version here: https://www.python.org/downloads/ 
