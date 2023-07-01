@@ -10,10 +10,14 @@ class Fan:
         self.__color = color
         self.__on = on
 
-    # Add Get/Set methods
-
+    # Add Getter/Setter Methods
+    def get_speed(self):
+        return self.__speed
+    def set_speed(self):
+        return self.__speed
+    
 
 # testing
 fan1= Fan(speed=Fan.fast, radius=10, color="yellow", on=True)
 print("fan 1 test")
-print("Speed:")
+print("Speed:",fan1.get_speed())
